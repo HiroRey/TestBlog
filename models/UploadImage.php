@@ -4,6 +4,7 @@
 namespace app\models;
 
 
+use Yii;
 use yii\web\UploadedFile;
 
 class UploadImage extends \yii\base\Model
@@ -19,16 +20,27 @@ class UploadImage extends \yii\base\Model
         ];
     }
 
-    public function upload($file)
+    public function upload(UploadedFile $file, $currentImage)
     {
         $this->image = $file;
+        $filename = md5(uniqid($file->basename)) . '.' . $file->extension;
 
-        if ($this->validate()) {
-           md5($this->image->saveAs('/web/'  . 'uploads/' . $this->image->baseName . '.' . $this->image->extension));
+        $this->deleteImage($currentImage);
 
-           return $this->image;
-        }
+        $this->image->saveAs(Yii::getAlias('@web')  . 'uploads/' . $filename);
+
+        return $filename;
 
     }
+
+    public function deleteImage($currentImage)
+    {
+
+        if(file_exists(Yii::getAlias('@web')  . '/uploads/'  . $currentImage))
+        {
+            unlink(Yii::getAlias('@web')  . 'uploads/' . $currentImage);
+        }
+    }
+
 
 }

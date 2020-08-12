@@ -28,12 +28,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'description:ntext',
             'dateCurrentCreate',
             'content:ntext',
-            //'image:ntext',
-            //'viewed',
-            //'userId',
-            //'status',
-            //'categoryId',
-
+            [
+                    'format' => 'html',
+                    'label' => 'Image',
+                    'value' => function($data) {
+                    return Html::img($data->getImage(), ['width' => 200]);
+                    }
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
