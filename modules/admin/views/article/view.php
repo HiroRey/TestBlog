@@ -18,6 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Set Image', ['set-image', 'id' => $model->id], ['class' => 'btn btn-default']) ?>
+        <?= Html::a('Set Category', ['set-category', 'id' => $model->id], ['class' => 'btn btn-warning']) ?>
+        <?= Html::a('Set Tags', ['set-tags', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
@@ -43,9 +45,26 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ],
             'viewed',
+            ['format' => 'html',
+                'label' => 'Tag',
+                'value' => function($data) {
+                    $str = '';
+                        foreach ($data->tags as $tag) {
+                            $str .= Html::label($tag->title) . '<br>';
+                        }
+                    return $str;
+                }],
             'userId',
             'status',
-            'categoryId',
+            [
+                'format' => 'html',
+                'label' => 'Category',
+                'value' => function($data) {
+            if (!empty($data->category->title)) {
+                return Html::label($data->category->title);
+            }
+                }
+            ],
         ],
     ]) ?>
 

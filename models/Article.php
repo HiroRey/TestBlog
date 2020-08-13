@@ -18,7 +18,7 @@ use Yii;
  * @property int|null $status
  * @property int|null $categoryId
  *
- * @property ArticleTag[] $articleTags
+ * @property Category $category
  * @property Comment[] $comments
  */
 class Article extends \yii\db\ActiveRecord
@@ -69,11 +69,20 @@ class Article extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getArticleTags()
+    public function getCategory()
     {
-        return $this->hasMany(ArticleTag::className(), ['articleID' => 'id']);
+        return $this->hasOne(Category::className(), ['id' => 'categoryId']);
     }
 
+    public function getTags()
+    {
+        return $this->hasMany(Tag::className(), ['id' => 'tagId'])
+            ->viaTable('article_tag', ['articleId' => 'id']);
+    }
+    public function getDate()
+    {
+        return Yii::$app->formatter->asDate($this->dateCurrentCreate);
+    }
     /**
      * Gets query for [[Comments]].
      *
@@ -107,5 +116,30 @@ class Article extends \yii\db\ActiveRecord
     public function getImage()
     {
         return ($this->image) ? '/uploads/' . $this->image : '/uploads/' . 'no-image.png';
+    }
+
+    public function saveCategory($category)
+    {
+
+        $this->categoryId = $category;
+        return $this->save(false);
+    }
+
+    public function saveTags(array $tags)
+    {
+        ArticleTag::deleteAll(['articleID' => $this->id]);
+
+        foreach ($tags as $tag)
+        {
+            $model = Tag::findOne($tag);
+            $this->link('tags', $model);
+        }
+        return true;
+    }
+
+    public function saveArticle()
+    {
+        $this->userId = \Yii::$app->user->id;
+        return $this->save();
     }
 }

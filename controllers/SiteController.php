@@ -2,7 +2,11 @@
 
 namespace app\controllers;
 
+use app\models\Article;
+use app\models\Category;
+use app\models\User;
 use Yii;
+use yii\data\Pagination;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
@@ -61,7 +65,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $query = Article::find();
+        $countQuery = clone $query;
+        $pages = new Pagination(['totalCount' => $countQuery->count(), 'PageSize' => 3]);
+        $models = $query->offset($pages->offset)
+            ->limit($pages->limit)
+            ->all();
+
+        $posts = Article::find()->orderBy('viewed desc')->limit(3)->all();
+        $lastPosts = Article::find()->orderBy('dateCurrentCreate desc')->limit(3)->all();
+        $categories = Category::find()->all();
+
+        return $this->render('index', [
+            'models' => $models,
+            'pages' => $pages,
+            'posts' => $posts,
+            'lastPosts' => $lastPosts,
+            'categories' => $categories
+        ]);
     }
 
     /**
@@ -84,6 +105,20 @@ class SiteController extends Controller
         return $this->render('login', [
             'model' => $model,
         ]);
+    }
+    public function actionSignup()
+    {
+        $user = new User;
+        if(\Yii::$app->request->isPost)
+        {
+            $user->load(\Yii::$app->request->post());
+                if($user->save())
+                {
+                    $this->redirect('login');
+                }
+        }
+
+        return $this->render('signup', ['model' => $user]);
     }
 
     /**
@@ -124,5 +159,42 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    public function actionView($id)
+    {
+
+        $article = Article::findOne($id);
+        $posts = Article::find()->orderBy('viewed desc')->limit(3)->all();
+        $lastPosts = Article::find()->orderBy('dateCurrentCreate desc')->limit(3)->all();
+        $categories = Category::find()->all();
+
+        return $this->render('single', [
+            'article' => $article,
+            'posts' => $posts,
+            'lastPosts' => $lastPosts,
+            'categories' => $categories
+        ]);
+    }
+    public function actionCategory($id)
+    {
+        $query = Article::find()->where(['categoryId' => $id]) ;
+        $countQuery = clone $query;
+        $pages = new Pagination(['totalCount' => $countQuery->count(), 'PageSize' => 6]);
+        $models = $query->offset($pages->offset)
+            ->limit($pages->limit)
+            ->all();
+
+        $posts = Article::find()->orderBy('viewed desc')->limit(3)->all();
+        $lastPosts = Article::find()->orderBy('dateCurrentCreate desc')->limit(3)->all();
+        $categories = Category::find()->all();
+
+        return $this->render('category',[
+            'models' => $models,
+            'pages' => $pages,
+            'posts' => $posts,
+            'lastPosts' => $lastPosts,
+            'categories' => $categories
+        ]);
     }
 }

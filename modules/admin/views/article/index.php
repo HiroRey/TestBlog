@@ -35,8 +35,18 @@ $this->params['breadcrumbs'][] = $this->title;
                     return Html::img($data->getImage(), ['width' => 200]);
                     }
             ],
+            ['format' => 'html',
+                'label' => 'Tag',
+                'value' => function($data) {
+                    $str = '';
+                    foreach ($data->tags as $tag) {
+                        $str .= Html::label($tag->title) . '<br>';
+                    }
+                    return $str;
+                }],
             ['class' => 'yii\grid\ActionColumn'],
         ],
+
     ]); ?>
 
 

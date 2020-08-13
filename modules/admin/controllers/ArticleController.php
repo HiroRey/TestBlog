@@ -2,10 +2,14 @@
 
 namespace app\modules\admin\controllers;
 
+use app\models\Category;
+use app\models\Tag;
 use app\models\UploadImage;
 use Yii;
 use app\models\Article;
 use yii\data\ActiveDataProvider;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -68,7 +72,7 @@ class ArticleController extends Controller
     {
         $model = new Article();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->saveArticle()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -88,7 +92,7 @@ class ArticleController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->saveArticle()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -141,5 +145,45 @@ class ArticleController extends Controller
        }
     }
         return $this->render('set-image', ['model' => $model]);
+    }
+
+    public function actionSetCategory($id)
+    {
+        $model = $this->findModel($id);
+
+
+        $categories = ArrayHelper::map(Category::find()->all(), 'id', 'title');
+
+        if(\Yii::$app->request->isPost)
+        {
+            $category = \Yii::$app->request->post('Category');
+
+            if($model->saveCategory($category))
+            {
+                $this->redirect('/admin/article/view?id=' . $model->id);
+            }
+        }
+
+        return $this->render('set-category', ['model' => $model,
+            'categories' => $categories]);
+    }
+
+    public function actionSetTags($id)
+    {
+        $model = $this->findModel($id);
+        $tags = ArrayHelper::map(Tag::find()->all(), 'id', 'title');
+
+        if(\Yii::$app->request->isPost)
+        {
+            $tag = \Yii::$app->request->post('Tags');
+
+            if($model->saveTags($tag))
+            {
+                $this->redirect('/admin/article/view?id=' . $id);
+            }
+        }
+
+        return $this->render('set-tags', ['model' => $model,
+            'tags' => $tags]);
     }
 }
