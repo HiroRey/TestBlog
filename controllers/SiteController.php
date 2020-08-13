@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Article;
 use app\models\Category;
+use app\models\Comment;
 use app\models\User;
 use Yii;
 use yii\data\Pagination;
@@ -163,6 +164,7 @@ class SiteController extends Controller
 
     public function actionView($id)
     {
+        $comment = new Comment();
 
         $article = Article::findOne($id);
         $posts = Article::find()->orderBy('viewed desc')->limit(3)->all();
@@ -173,7 +175,8 @@ class SiteController extends Controller
             'article' => $article,
             'posts' => $posts,
             'lastPosts' => $lastPosts,
-            'categories' => $categories
+            'categories' => $categories,
+            'commentt' => $comment
         ]);
     }
     public function actionCategory($id)
@@ -196,5 +199,21 @@ class SiteController extends Controller
             'lastPosts' => $lastPosts,
             'categories' => $categories
         ]);
+    }
+
+    public function actionComment($id)
+    {
+        $comment = new Comment();
+
+        if (\Yii::$app->request->isPost)
+        {
+            $comment->load(\Yii::$app->request->post());
+            $comment->userId = \Yii::$app->user->id;
+            $comment->articleId = $id;
+
+            if ($comment->save()) {
+                $this->redirect('/site/view?id=' . $id);
+            }
+        }
     }
 }

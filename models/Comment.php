@@ -75,4 +75,8 @@ class Comment extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'userId']);
     }
+    public function getDate()
+    {
+        return Yii::$app->formatter->asDate($this->dateCurrentCreate);
+    }
 }

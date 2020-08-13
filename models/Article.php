@@ -142,4 +142,5 @@ class Article extends \yii\db\ActiveRecord
         $this->userId = \Yii::$app->user->id;
         return $this->save();
     }
+
 }
