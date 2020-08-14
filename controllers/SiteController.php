@@ -171,6 +171,8 @@ class SiteController extends Controller
         $lastPosts = Article::find()->orderBy('dateCurrentCreate desc')->limit(3)->all();
         $categories = Category::find()->all();
 
+        $article->viewedCounter();
+
         return $this->render('single', [
             'article' => $article,
             'posts' => $posts,

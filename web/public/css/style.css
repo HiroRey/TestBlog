@@ -846,6 +846,7 @@ footer instragram
 }
 
 .footer-widget {
+    background-color: black;
     padding: 70px 0;
 
 }
@@ -943,7 +944,10 @@ athuor
     width: 30%;
     padding-left: 15px;
     margin-left: -20%;
+
+
 }
+
 
 .author-id {
     margin-top: 33px;
@@ -1635,7 +1639,12 @@ p.go-back-home a {
 }
 
 p.go-back-home a:hover {
-    background: #00BFF3;
+    background: #00bff3;
     color: #fff;
     border-color: #00BFF3;
+}
+
+.footer {
+    background-color: gray;
+
 }

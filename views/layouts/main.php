@@ -13,10 +13,7 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 if(isset(Yii::$app->user->id)) {
     $admin = User::findOne(Yii::$app->user->id);
-} else {
-    $admin = User::findOne(2);
 }
-
 PublicAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -51,9 +48,11 @@ PublicAsset::register($this);
 
             <ul class="nav navbar-nav text-uppercase">
                 <li><a href="<?= Url::toRoute(['site/index'])?>">Home</a></li>
+                <?php if(Yii::$app->user != Yii::$app->user->isGuest) : ?>
                 <?php if ($admin->isAdmin === 1) : ?>
-                <li><a href="<?= Url::toRoute(['/admin/article/index'])?>">Admin Panel</a></li>
+                    <li><a href="<?= Url::toRoute(['/admin/article/index'])?>">Admin Panel</a></li>
                 <?php endif; ?>
+              <?php endif; ?>
             </ul>
 
 
@@ -72,6 +71,7 @@ PublicAsset::register($this);
                         <?php endif;?>
                     </ul>
                 </div>
+
 
             </div>
             <!-- /.navbar-collapse -->

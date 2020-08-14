@@ -143,4 +143,15 @@ class Article extends \yii\db\ActiveRecord
         return $this->save();
     }
 
+    public function getAuthor()
+    {
+        return $this->hasOne(User::class, ['id' => 'userId']);
+    }
+
+    public function viewedCounter()
+    {
+        $this->viewed += 1;
+        return $this->save(false);
+    }
+
 }
