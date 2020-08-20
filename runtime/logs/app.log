@@ -16135,3 +16135,2598 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1597939297.311
     'REQUEST_TIME' => 1597939297
 ]
+2020-08-20 16:33:00 [127.0.0.1][6][ha7mtd0mt9nc2flun774l007te][error][yii\web\HttpException:404] yii\web\NotFoundHttpException in /var/www/html/blog.ua/modules/admin/Module.php:27
+Stack trace:
+#0 [internal function]: app\modules\admin\Module->app\modules\admin\{closure}()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessControl.php(138): call_user_func()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction()
+#3 [internal function]: yii\base\ActionFilter->beforeFilter()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Component.php(627): call_user_func()
+#5 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(168): yii\base\Module->beforeAction()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#10 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2020-08-20 16:33:00 [127.0.0.1][6][ha7mtd0mt9nc2flun774l007te][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '3c43bf2520a8630e8cc23bba1b8966f7b7e5d69d48d84559420b2b2b0828a16ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PrA36FP0qMv0RcjapQjYn6yajLi3AFQb\";}'
+    'PHPSESSID' => 'ha7mtd0mt9nc2flun774l007te'
+    '_identity' => '92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[6,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=3c43bf2520a8630e8cc23bba1b8966f7b7e5d69d48d84559420b2b2b0828a16ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PrA36FP0qMv0RcjapQjYn6yajLi3AFQb%22%3B%7D; PHPSESSID=ha7mtd0mt9nc2flun774l007te; _identity=92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53808'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941180.305
+    'REQUEST_TIME' => 1597941180
+]
+2020-08-20 16:33:05 [127.0.0.1][6][ha7mtd0mt9nc2flun774l007te][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 16:33:05 [127.0.0.1][6][ha7mtd0mt9nc2flun774l007te][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '3c43bf2520a8630e8cc23bba1b8966f7b7e5d69d48d84559420b2b2b0828a16ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PrA36FP0qMv0RcjapQjYn6yajLi3AFQb\";}'
+    'PHPSESSID' => 'ha7mtd0mt9nc2flun774l007te'
+    '_identity' => '92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[6,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/'
+    'HTTP_COOKIE' => '_csrf=3c43bf2520a8630e8cc23bba1b8966f7b7e5d69d48d84559420b2b2b0828a16ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PrA36FP0qMv0RcjapQjYn6yajLi3AFQb%22%3B%7D; PHPSESSID=ha7mtd0mt9nc2flun774l007te; _identity=92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53816'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941185.59
+    'REQUEST_TIME' => 1597941185
+]
+2020-08-20 16:34:50 [127.0.0.1][6][ha7mtd0mt9nc2flun774l007te][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 16:34:50 [127.0.0.1][6][ha7mtd0mt9nc2flun774l007te][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '3c43bf2520a8630e8cc23bba1b8966f7b7e5d69d48d84559420b2b2b0828a16ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PrA36FP0qMv0RcjapQjYn6yajLi3AFQb\";}'
+    'PHPSESSID' => 'ha7mtd0mt9nc2flun774l007te'
+    '_identity' => '92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[6,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://blog.ua/admin/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=3c43bf2520a8630e8cc23bba1b8966f7b7e5d69d48d84559420b2b2b0828a16ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PrA36FP0qMv0RcjapQjYn6yajLi3AFQb%22%3B%7D; PHPSESSID=ha7mtd0mt9nc2flun774l007te; _identity=92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53824'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941290.233
+    'REQUEST_TIME' => 1597941290
+]
+2020-08-20 16:40:05 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/blog.ua/modules/admin/views/default/article.php in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render()
+#2 /var/www/html/blog.ua/modules/admin/controllers/DefaultController.php(18): yii\base\Controller->render()
+#3 [internal function]: app\modules\admin\controllers\DefaultController->actionIndex()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2020-08-20 16:40:04 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53924'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941604.945
+    'REQUEST_TIME' => 1597941604
+]
+2020-08-20 16:40:20 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/blog.ua/modules/admin/views/default/../article.php in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render()
+#2 /var/www/html/blog.ua/modules/admin/controllers/DefaultController.php(18): yii\base\Controller->render()
+#3 [internal function]: app\modules\admin\controllers\DefaultController->actionIndex()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2020-08-20 16:40:20 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53948'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941620.812
+    'REQUEST_TIME' => 1597941620
+]
+2020-08-20 16:40:39 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/blog.ua/modules/admin/views/article.php in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render()
+#2 /var/www/html/blog.ua/modules/admin/controllers/DefaultController.php(18): yii\base\Controller->render()
+#3 [internal function]: app\modules\admin\controllers\DefaultController->actionIndex()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2020-08-20 16:40:39 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53974'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941639.102
+    'REQUEST_TIME' => 1597941639
+]
+2020-08-20 16:41:08 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/blog.ua/modules/admin/views/article/index.php:22
+Stack trace:
+#0 /var/www/html/blog.ua/modules/admin/views/article/index.php(22): yii\base\ErrorHandler->handleError()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/b...')
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#3 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render()
+#5 /var/www/html/blog.ua/modules/admin/controllers/DefaultController.php(18): yii\base\Controller->render()
+#6 [internal function]: app\modules\admin\controllers\DefaultController->actionIndex()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#10 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#11 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#12 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-08-20 16:41:08 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53986'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941668.717
+    'REQUEST_TIME' => 1597941668
+]
+2020-08-20 16:41:16 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/blog.ua/modules/admin/views/article/index.php:22
+Stack trace:
+#0 /var/www/html/blog.ua/modules/admin/views/article/index.php(22): yii\base\ErrorHandler->handleError()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/b...')
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#3 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render()
+#5 /var/www/html/blog.ua/modules/admin/controllers/DefaultController.php(18): yii\base\Controller->render()
+#6 [internal function]: app\modules\admin\controllers\DefaultController->actionIndex()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#10 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#11 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#12 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-08-20 16:41:16 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53988'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941676.445
+    'REQUEST_TIME' => 1597941676
+]
+2020-08-20 16:41:57 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/blog.ua/modules/admin/views/article/index.php:22
+Stack trace:
+#0 /var/www/html/blog.ua/modules/admin/views/article/index.php(22): yii\base\ErrorHandler->handleError()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/b...')
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#3 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render()
+#5 /var/www/html/blog.ua/modules/admin/controllers/DefaultController.php(18): yii\base\Controller->render()
+#6 [internal function]: app\modules\admin\controllers\DefaultController->actionIndex()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#10 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#11 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#12 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-08-20 16:41:57 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '53992'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597941717.77
+    'REQUEST_TIME' => 1597941717
+]
+2020-08-20 16:55:55 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 16:55:55 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54306'
+    'REDIRECT_URL' => '/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942555.976
+    'REQUEST_TIME' => 1597942555
+]
+2020-08-20 16:55:57 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 16:55:57 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/article/index'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54306'
+    'REDIRECT_URL' => '/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942557.603
+    'REQUEST_TIME' => 1597942557
+]
+2020-08-20 16:56:56 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 16:56:56 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54326'
+    'REDIRECT_URL' => '/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942616.904
+    'REQUEST_TIME' => 1597942616
+]
+2020-08-20 16:56:59 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 16:56:59 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54328'
+    'REDIRECT_URL' => '/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942619.566
+    'REQUEST_TIME' => 1597942619
+]
+2020-08-20 16:57:35 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 16:57:35 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/default/index'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54342'
+    'REDIRECT_URL' => '/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942655.091
+    'REQUEST_TIME' => 1597942655
+]
+2020-08-20 17:01:10 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:01:10 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54386'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942870.629
+    'REQUEST_TIME' => 1597942870
+]
+2020-08-20 17:02:16 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:02:16 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54412'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942936.241
+    'REQUEST_TIME' => 1597942936
+]
+2020-08-20 17:02:34 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:02:34 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54424'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942954.346
+    'REQUEST_TIME' => 1597942954
+]
+2020-08-20 17:02:36 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:02:36 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54424'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942956.384
+    'REQUEST_TIME' => 1597942956
+]
+2020-08-20 17:02:38 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:02:38 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/index.html'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54424'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942958.006
+    'REQUEST_TIME' => 1597942958
+]
+2020-08-20 17:02:39 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:02:39 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/index.html'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54424'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942959.077
+    'REQUEST_TIME' => 1597942959
+]
+2020-08-20 17:02:39 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:02:39 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/index.html'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54424'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942959.973
+    'REQUEST_TIME' => 1597942959
+]
+2020-08-20 17:03:19 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:03:19 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/index.html'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54432'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597942999.5
+    'REQUEST_TIME' => 1597942999
+]
+2020-08-20 17:03:21 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/index.html". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:03:21 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://blog.ua/admin/index.html'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54432'
+    'REDIRECT_URL' => '/admin/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943001.279
+    'REQUEST_TIME' => 1597943001
+]
+2020-08-20 17:03:32 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:03:32 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54432'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943012.018
+    'REQUEST_TIME' => 1597943012
+]
+2020-08-20 17:03:52 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:03:52 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54442'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943032.863
+    'REQUEST_TIME' => 1597943032
+]
+2020-08-20 17:04:02 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:04:02 [127.0.0.1][1][9e6qoel0o02b2e85seovutp2gr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK\";}'
+    'PHPSESSID' => '9e6qoel0o02b2e85seovutp2gr'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=6f874e009f1882ff4fd23574a3c242721d870f6153b778ee06fb7b3c358a99bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fkfBm-o7imz1-doTaGwlS5O3dj5PnLnK%22%3B%7D; PHPSESSID=9e6qoel0o02b2e85seovutp2gr; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54454'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943042.226
+    'REQUEST_TIME' => 1597943042
+]
+2020-08-20 17:09:20 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/default/view in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php:151
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#3 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:09:20 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = [
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54510'
+    'REDIRECT_URL' => '/admin/default/view'
+    'REDIRECT_QUERY_STRING' => 'id=8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=8'
+    'REQUEST_URI' => '/admin/default/view?id=8'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943360.083
+    'REQUEST_TIME' => 1597943360
+]
+2020-08-20 17:09:25 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/default/create in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php:151
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#3 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:09:25 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54510'
+    'REDIRECT_URL' => '/admin/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/default/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943365.488
+    'REQUEST_TIME' => 1597943365
+]
+2020-08-20 17:10:06 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/default/view in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php:151
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#3 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:10:06 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = [
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54514'
+    'REDIRECT_URL' => '/admin/default/view'
+    'REDIRECT_QUERY_STRING' => 'id=8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=8'
+    'REQUEST_URI' => '/admin/default/view?id=8'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943406.703
+    'REQUEST_TIME' => 1597943406
+]
+2020-08-20 17:10:40 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "afdsfdsfds". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:10:40 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54516'
+    'REDIRECT_URL' => '/afdsfdsfds'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/afdsfdsfds'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943440.085
+    'REQUEST_TIME' => 1597943440
+]
+2020-08-20 17:11:24 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "afdsfdsfds". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:11:24 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54520'
+    'REDIRECT_URL' => '/afdsfdsfds'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/afdsfdsfds'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943484.465
+    'REQUEST_TIME' => 1597943484
+]
+2020-08-20 17:11:33 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:11:33 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54522'
+    'REDIRECT_URL' => '/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943493.76
+    'REQUEST_TIME' => 1597943493
+]
+2020-08-20 17:11:43 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:11:43 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54524'
+    'REDIRECT_URL' => '/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943503.605
+    'REQUEST_TIME' => 1597943503
+]
+2020-08-20 17:11:51 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/admin/article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:11:51 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54538'
+    'REDIRECT_URL' => '/admin/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943511.072
+    'REQUEST_TIME' => 1597943511
+]
+2020-08-20 17:12:01 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admin/admin/article/index". in /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#2 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2020-08-20 17:12:01 [127.0.0.1][1][h3hphohav3felcq2vpni06o88m][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'h3hphohav3felcq2vpni06o88m'
+    '_identity' => 'f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=h3hphohav3felcq2vpni06o88m; _identity=f5781ee83d46293391abfc1534e44648aee6fda4d0570e92943f5d2188c27696a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54542'
+    'REDIRECT_URL' => '/admin/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943521.184
+    'REQUEST_TIME' => 1597943521
+]
+2020-08-20 17:13:12 [127.0.0.1][-][tf2iui4tqasu50pbvhvo7hoqm6][error][yii\web\HttpException:404] yii\web\NotFoundHttpException in /var/www/html/blog.ua/modules/admin/Module.php:35
+Stack trace:
+#0 [internal function]: app\modules\admin\Module->app\modules\admin\{closure}()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessRule.php(298): call_user_func()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessRule.php(174): yii\filters\AccessRule->matchCustom()
+#3 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessControl.php(123): yii\filters\AccessRule->allows()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Component.php(627): call_user_func()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(168): yii\base\Module->beforeAction()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#10 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#11 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#12 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-08-20 17:13:12 [127.0.0.1][-][tf2iui4tqasu50pbvhvo7hoqm6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'tf2iui4tqasu50pbvhvo7hoqm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=tf2iui4tqasu50pbvhvo7hoqm6'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54572'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943592.714
+    'REQUEST_TIME' => 1597943592
+]
+2020-08-20 17:13:19 [127.0.0.1][-][tf2iui4tqasu50pbvhvo7hoqm6][error][yii\web\HttpException:404] yii\web\NotFoundHttpException in /var/www/html/blog.ua/modules/admin/Module.php:35
+Stack trace:
+#0 [internal function]: app\modules\admin\Module->app\modules\admin\{closure}()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessRule.php(298): call_user_func()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessRule.php(174): yii\filters\AccessRule->matchCustom()
+#3 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessControl.php(123): yii\filters\AccessRule->allows()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Component.php(627): call_user_func()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(168): yii\base\Module->beforeAction()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#10 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#11 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#12 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-08-20 17:13:19 [127.0.0.1][-][tf2iui4tqasu50pbvhvo7hoqm6][info][application] $_GET = [
+    's' => 'grg'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_\";}'
+    'PHPSESSID' => 'tf2iui4tqasu50pbvhvo7hoqm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://blog.ua/admin/'
+    'HTTP_COOKIE' => '_csrf=52faec970fc789fb3982bae9c455381e608ff14fde80df70ad3c9e3326829ad8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-TMqlqrGWnLtYaetGDTC7f9huKGGGA_%22%3B%7D; PHPSESSID=tf2iui4tqasu50pbvhvo7hoqm6'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54574'
+    'REDIRECT_URL' => '/admin/'
+    'REDIRECT_QUERY_STRING' => 's=grg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=grg'
+    'REQUEST_URI' => '/admin/?s=grg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943599.111
+    'REQUEST_TIME' => 1597943599
+]
+2020-08-20 17:13:30 [127.0.0.1][6][hmj1gu89sbrlib9hnc1vedfpon][error][yii\web\HttpException:404] yii\web\NotFoundHttpException in /var/www/html/blog.ua/modules/admin/Module.php:27
+Stack trace:
+#0 [internal function]: app\modules\admin\Module->app\modules\admin\{closure}()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessControl.php(138): call_user_func()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction()
+#3 [internal function]: yii\base\ActionFilter->beforeFilter()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Component.php(627): call_user_func()
+#5 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(168): yii\base\Module->beforeAction()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#10 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2020-08-20 17:13:30 [127.0.0.1][6][hmj1gu89sbrlib9hnc1vedfpon][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '11e9ec7660a604502fb262056c533f0ca9b61e81b4ace2dbe13dff9fa2047fd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AahoFu-1RYAukl_jUEEpEwYdR8xR6GVc\";}'
+    'PHPSESSID' => 'hmj1gu89sbrlib9hnc1vedfpon'
+    '_identity' => '92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[6,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=11e9ec7660a604502fb262056c533f0ca9b61e81b4ace2dbe13dff9fa2047fd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AahoFu-1RYAukl_jUEEpEwYdR8xR6GVc%22%3B%7D; PHPSESSID=hmj1gu89sbrlib9hnc1vedfpon; _identity=92e6608fa3847b2a87ac42b79a75483d44852b13f5d92f9dc2bfa657ab398f94a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54574'
+    'REDIRECT_URL' => '/admin/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943610.078
+    'REQUEST_TIME' => 1597943610
+]
+2020-08-20 17:15:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException in /var/www/html/blog.ua/modules/admin/Module.php:35
+Stack trace:
+#0 [internal function]: app\modules\admin\Module->app\modules\admin\{closure}()
+#1 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessRule.php(298): call_user_func()
+#2 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessRule.php(174): yii\filters\AccessRule->matchCustom()
+#3 /var/www/html/blog.ua/vendor/yiisoft/yii2/filters/AccessControl.php(123): yii\filters\AccessRule->allows()
+#4 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Component.php(627): call_user_func()
+#7 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger()
+#8 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Controller.php(168): yii\base\Module->beforeAction()
+#9 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#10 /var/www/html/blog.ua/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#11 /var/www/html/blog.ua/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#12 /var/www/html/blog.ua/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2020-08-20 17:15:34 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.ua'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Ubuntu) Server at blog.ua Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Ubuntu)'
+    'SERVER_NAME' => 'blog.ua'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/blog.ua/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/blog.ua/web/index.php'
+    'REMOTE_PORT' => '54596'
+    'REDIRECT_URL' => '/admin/article/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/article/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1597943734.081
+    'REQUEST_TIME' => 1597943734
+]

@@ -1,3 +1,8 @@
+<?php
+
+use yii\helpers\Url;
+
+?>
 <div class="st-content">
     <div class="container">
         <div class="row">
@@ -17,7 +22,7 @@
                                             <input type="text" placeholder="Search and hit enter..." name="s" id="s"/>
                                         </div>
                                     </form>
-                                    <p class="go-back-home"><a href="index.html">
+                                    <p class="go-back-home"><a href="<?= Url::toRoute(['site/index'])?>">
                                             Back to Home Page</a></p>
                                 </div>
                             </div>

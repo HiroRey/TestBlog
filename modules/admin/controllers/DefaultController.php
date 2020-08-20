@@ -2,6 +2,8 @@
 
 namespace app\modules\admin\controllers;
 
+use app\models\Article;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 
 /**
@@ -15,6 +17,6 @@ class DefaultController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+      $this->redirect('/admin/article/index');
     }
 }
