@@ -103,6 +103,7 @@ class SiteController extends Controller
         }
 
         $model->password = '';
+
         return $this->render('login', [
             'model' => $model,
         ]);
@@ -165,19 +166,13 @@ class SiteController extends Controller
     public function actionView($id)
     {
         $comment = new Comment();
-
         $article = Article::findOne($id);
-        $posts = Article::find()->orderBy('viewed desc')->limit(3)->all();
-        $lastPosts = Article::find()->orderBy('dateCurrentCreate desc')->limit(3)->all();
-        $categories = Category::find()->all();
+
 
         $article->viewedCounter();
 
         return $this->render('single', [
             'article' => $article,
-            'posts' => $posts,
-            'lastPosts' => $lastPosts,
-            'categories' => $categories,
             'commentt' => $comment
         ]);
     }

@@ -57,7 +57,7 @@ use yii\widgets\ActiveForm;
 
                         <?=$comment->getDate() ?>
                     <div class="comment-text">
-                        <p class="para"><h4><i><?=$comment->text ?></i></h4></p>
+                        <p class="para"><i><?=$comment->text ?></i></p>
                     </div>
                         <hr>
                     <?php endforeach; ?>
@@ -74,19 +74,14 @@ use yii\widgets\ActiveForm;
                         <?=$form->field($commentt, 'text')->textarea()->hint('Пожалуйста, введите ваш комментарий')?>
                     </div>
                 </div>
-            </div>
-
                 <?= Html::submitButton('Create', ['class' => 'btn btn-success']) ?>
                 <?php ActiveForm::end(); ?>
-                    </form>
-                </div><!--end leave comment-->
+                </form>
+            </div><!--end leave comment-->
             </div>
 
-        <?=$this->render('/layouts/sidebar', [
-            'posts' => $posts,
-            'lastPosts' => $lastPosts,
-            'categories' => $categories]) ?>
 
+            </div>
         </div>
     </div>
 </div>
