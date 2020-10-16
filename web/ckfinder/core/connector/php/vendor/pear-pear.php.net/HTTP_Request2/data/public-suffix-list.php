@@ -1550,7 +1550,7 @@ return array(
   'cz' => true,
   'dell-ogliastra' => true,
   'dellogliastra' => true,
-  'en' => true,
+  'ru' => true,
   'enna' => true,
   'fc' => true,
   'fe' => true,

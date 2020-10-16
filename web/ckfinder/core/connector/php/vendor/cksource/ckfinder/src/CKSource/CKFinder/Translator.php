@@ -35,7 +35,7 @@ class Translator
      */
     public function __construct($langCode = null)
     {
-        $locale = $langCode ?: (isset($_GET['langCode']) ? (string) $_GET['langCode'] : 'en');
+        $locale = $langCode ?: (isset($_GET['langCode']) ? (string) $_GET['langCode'] : 'ru');
 
         $this->setLocale($locale);
     }
@@ -48,7 +48,7 @@ class Translator
     protected function setLocale($locale)
     {
         if (null === $locale || !preg_match('/^[a-z\-]{2,5}$/', $locale) || !file_exists(__DIR__ . "/locales/{$locale}.json")) {
-            $locale = 'en';
+            $locale = 'ru';
         }
 
         if (null === $this->translations) {

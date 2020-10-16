@@ -38,15 +38,12 @@ PublicAsset::register($this);
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
             </div>
 
 
             <ul class="nav navbar-nav text-uppercase">
-                <li><a href="<?= Url::toRoute(['site/index'])?>">Home</a></li>
+                <li><a href="<?= Url::toRoute(['site/index'])?>"><?= Yii::t('common', 'Home'); ?></a></li>
                 <?php if(Yii::$app->user != Yii::$app->user->isGuest) : ?>
                 <?php if ($admin->isAdmin === 1) : ?>
                     <li><a href="<?= Url::toRoute(['/admin/article/index'])?>">Admin Panel</a></li>

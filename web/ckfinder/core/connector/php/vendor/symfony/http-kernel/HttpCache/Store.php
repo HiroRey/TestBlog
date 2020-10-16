@@ -236,7 +236,7 @@ class Store implements StoreInterface
      */
     protected function generateContentDigest(Response $response)
     {
-        return 'en'.hash('sha256', $response->getContent());
+        return 'ru'.hash('sha256', $response->getContent());
     }
 
     /**
